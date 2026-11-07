@@ -1,0 +1,40 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@800&display=swap">
+<style>
+html,body{margin:0;background:var(--paper)}
+svg{display:block;width:960px;height:288px}
+.ground{fill:var(--paper)}
+.a{fill:var(--amber)}
+.ad{fill:var(--amber-dark)}
+.al{fill:var(--amber-light)}
+.i{fill:var(--ink)}
+.dot{fill:var(--amber)}
+.name{font:800 96px/1 var(--font-mono);letter-spacing:-0.05em;fill:var(--ink)}
+.tag{font:400 14px/1 var(--font-sans);fill:var(--muted)}
+</style>
+</head>
+<body>
+<svg viewBox="0 0 960 288" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bitflip: Farbblöcke in Amber und Tinte mit Punktraster">
+<!-- Derivation
+Blöcke: amber 216×240, ink 184×112, amber-dark 88×112, amber-light 80×112; Radius radius-lg (20), Seiten Vielfache von space-2 (8).
+Anordnung: eine hohe Amber-Platte links, rechts daneben ein Tinte-Block oben und zwei kleine Amber-Töne darunter, alles ab x = 520.
+Muster: Punktraster im Abstand space-3 (16) in Amber auf dem Tinte-Block, weil das System technisch, monospaced und rasterbasiert ist.
+Schritte: space-2, space-3, space-4 (24 Rand); Radien: radius-lg. -->
+<defs>
+<pattern id="dots" x="752" y="24" width="16" height="16" patternUnits="userSpaceOnUse"><circle class="dot" cx="8" cy="8" r="2"/></pattern>
+</defs>
+<rect class="ground" width="960" height="288"/>
+<rect class="a" x="520" y="24" width="216" height="240" rx="20"/>
+<rect class="i" x="752" y="24" width="184" height="112" rx="20"/>
+<rect x="752" y="24" width="184" height="112" rx="20" fill="url(#dots)"/>
+<rect class="ad" x="752" y="152" width="88" height="112" rx="20"/>
+<rect class="al" x="856" y="152" width="80" height="112" rx="20"/>
+<text class="name" x="36" y="206">Bitflip</text>
+<text class="tag" x="40" y="240">Lernen in Inseln, hell und nerdig.</text>
+</svg>
+</body>
+</html>

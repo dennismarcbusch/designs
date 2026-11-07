@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 100 560 400" width="560" height="400">
+<title>Bitflip Inselszene: Server, Lernpaket mit Code-Fenster, Würfeltreppe</title>
+<defs>
+<g id="tile"><polygon points="0,-12 103.9,48 0,108 -103.9,48" fill="var(--t,#FFFFFF)" stroke="#0B0F14" stroke-width="1.5" stroke-linejoin="round"/><polygon points="-103.9,60 0,120 0,108 -103.9,48" fill="var(--l,#EEF1F5)" stroke="#0B0F14" stroke-width="1.5" stroke-linejoin="round"/><polygon points="103.9,60 0,120 0,108 103.9,48" fill="var(--r,#DCE2EA)" stroke="#0B0F14" stroke-width="1.5" stroke-linejoin="round"/></g>
+<g id="blade"><polygon points="0,-22 77.9,23 0,68 -77.9,23" fill="#FFFFFF" stroke="#0B0F14" stroke-width="1.5" stroke-linejoin="round"/><polygon points="-77.9,45 0,90 0,68 -77.9,23" fill="#EEF1F5" stroke="#0B0F14" stroke-width="1.5" stroke-linejoin="round"/><polygon points="77.9,45 0,90 0,68 77.9,23" fill="#DCE2EA" stroke="#0B0F14" stroke-width="1.5" stroke-linejoin="round"/>
+<g transform="matrix(0.866 0.5 0 1 -77.9 45)"><rect x="10" y="-15" width="7" height="7" fill="#FFB020"/><rect x="22" y="-15" width="7" height="7" fill="#FFFFFF" stroke="#0B0F14" stroke-width="1"/><rect x="48" y="-14" width="34" height="5" fill="#CBD3DD"/></g></g>
+<g id="cube"><polygon points="0,-80 69.3,-40 0,0 -69.3,-40" fill="var(--t,#FFFFFF)" stroke="#0B0F14" stroke-width="var(--sw,1.5)" stroke-linejoin="round"/><polygon points="-69.3,40 0,80 0,0 -69.3,-40" fill="var(--l,#EEF1F5)" stroke="#0B0F14" stroke-width="var(--sw,1.5)" stroke-linejoin="round"/><polygon points="69.3,40 0,80 0,0 69.3,-40" fill="var(--r,#DCE2EA)" stroke="#0B0F14" stroke-width="var(--sw,1.5)" stroke-linejoin="round"/></g>
+<g id="pkg"><use href="#cube" style="--t:#FFD470;--l:#FFB020;--r:#E08A00;--sw:2"/>
+<path transform="matrix(0.866 0.5 0 1 -69.3 40)" d="M 34 -54 L 56 -40 L 34 -26" fill="none" stroke="#0B0F14" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path transform="matrix(-0.866 0.5 0 1 69.3 40)" d="M 46 -24 L 70 -24" fill="none" stroke="#0B0F14" stroke-width="7" stroke-linecap="round"/></g>
+</defs>
+<g transform="translate(0,20)">
+<g fill="#E4E8ED"><ellipse cx="280" cy="278" rx="112" ry="24"/><ellipse cx="150" cy="418" rx="112" ry="24"/><ellipse cx="400" cy="448" rx="112" ry="24"/></g>
+<use href="#tile" x="280" y="150"/><use href="#tile" x="150" y="290"/><use href="#tile" x="400" y="320"/>
+<g fill="none" stroke="#E08A00" stroke-width="2.4" stroke-dasharray="6 5" stroke-linecap="round"><path d="M214 318 Q236 276 262 238"/><path d="M318 232 Q372 250 366 340"/></g>
+<g fill="#FFB020" stroke="#0B0F14" stroke-width="1.2"><circle cx="214" cy="318" r="4"/><circle cx="262" cy="238" r="4"/><circle cx="318" cy="232" r="4"/><circle cx="366" cy="340" r="4"/></g>
+<use href="#cube" transform="translate(280 150) scale(0.4)" style="--t:#FFD470;--l:#FFB020;--r:#E08A00;--sw:3.5"/>
+<use href="#cube" transform="translate(307.7 198) scale(0.4)" style="--sw:3.5"/>
+<use href="#cube" transform="translate(252.3 198) scale(0.4)" style="--sw:3.5"/>
+<use href="#blade" x="150" y="293"/><use href="#blade" x="150" y="267"/><use href="#blade" x="150" y="241"/><use href="#blade" x="150" y="215"/>
+<g transform="matrix(0.866 0.5 0 1 456 262)"><rect x="0" y="-72" width="96" height="72" rx="4" fill="#FFFFFF" stroke="#0B0F14" stroke-width="2"/><rect x="0" y="-72" width="96" height="13" fill="#0B0F14"/><circle cx="8" cy="-65.5" r="2.5" fill="#FFB020"/><circle cx="16" cy="-65.5" r="2.5" fill="#CBD3DD"/><rect x="8" y="-52" width="44" height="5" rx="2" fill="#E08A00"/><rect x="8" y="-42" width="66" height="5" rx="2" fill="#CBD3DD"/><rect x="8" y="-32" width="32" height="5" rx="2" fill="#CBD3DD"/><rect x="8" y="-22" width="54" height="5" rx="2" fill="#E08A00"/><text x="8" y="-6" font-family="'JetBrains Mono', monospace" font-weight="800" font-size="12" fill="#0B0F14">&gt;_</text></g>
+<ellipse cx="400" cy="368" rx="40" ry="22" fill="#FFB020" fill-opacity="0.4"/><path d="M400 328 L400 368" stroke="#0B0F14" stroke-width="1.5" stroke-dasharray="3 4" fill="none"/>
+<use href="#pkg" transform="translate(400 292) scale(0.9)"/>
+<use href="#cube" transform="translate(90 170) scale(0.1)" style="--t:#FFD470;--l:#FFB020;--r:#E08A00;--sw:10"/><use href="#cube" transform="translate(470 150) scale(0.1)" style="--sw:10"/><use href="#cube" transform="translate(60 262) scale(0.12)" style="--sw:9"/><use href="#cube" transform="translate(530 392) scale(0.12)" style="--t:#FFD470;--l:#FFB020;--r:#E08A00;--sw:9"/><use href="#cube" transform="translate(330 470) scale(0.1)" style="--sw:10"/><use href="#cube" transform="translate(230 104) scale(0.1)" style="--t:#FFD470;--l:#FFB020;--r:#E08A00;--sw:10"/>
+</g>
+</svg>

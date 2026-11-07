@@ -1,0 +1,49 @@
+<!-- @dsCard group="Vorlagen" height=400 width=640 subtitle="Videotitel 16:9" -->
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500;700;800&display=swap">
+<style>
+html,body{margin:0;background:var(--surface)}
+body{padding:20px}
+.card{position:relative;width:640px;height:360px;background:var(--paper);border-radius:var(--radius-lg);overflow:hidden;box-shadow:0 0 0 1px var(--line);font-family:var(--font-sans)}
+.kick{position:absolute;left:40px;top:36px;font:500 14px var(--font-mono);letter-spacing:.12em;color:var(--amber-text)}
+h1{position:absolute;left:40px;top:84px;width:300px;margin:0;font:800 36px/1.08 var(--font-mono);letter-spacing:-.05em;color:var(--ink)}
+h1 span{color:var(--amber)}
+.bar{position:absolute;left:40px;top:262px;width:72px;height:6px;border-radius:3px;background:var(--amber)}
+.foot{position:absolute;left:40px;bottom:32px;font:700 14px var(--font-mono);color:var(--ink)}
+.foot b{color:var(--amber-text)}
+.foot i{font-style:normal;font-weight:400;color:var(--muted);margin-left:10px}
+svg{position:absolute;right:20px;top:46px;width:270px;height:231px}
+.t{fill:var(--iso-top)}.l{fill:var(--iso-left)}.r{fill:var(--iso-right)}
+.e{stroke:var(--ink);stroke-width:1.5;stroke-linejoin:round}
+.pt{fill:var(--amber-light)}.pl{fill:var(--amber)}.pr{fill:var(--amber-dark)}
+</style>
+</head>
+<body>
+<div class="card">
+<div class="kick">// MODUL 03 · NETZWERK</div>
+<h1>Subnetting ohne Kopf&shy;schmerzen<span>_</span></h1>
+<div class="bar"></div>
+<div class="foot">bit<b>flip_</b><i>12 min</i></div>
+<svg viewBox="0 0 280 240" role="img" aria-label="Insel mit schwebendem Lernpaket">
+<ellipse cx="140" cy="226" rx="104" ry="14" fill="var(--line)"/>
+<g transform="translate(140 120) scale(0.8)">
+<polygon class="t e" points="0,-12 103.9,48 0,108 -103.9,48"/>
+<polygon class="l e" points="-103.9,60 0,120 0,108 -103.9,48"/>
+<polygon class="r e" points="103.9,60 0,120 0,108 103.9,48"/>
+</g>
+<ellipse cx="140" cy="168" rx="34" ry="18" fill="var(--amber)" fill-opacity=".4"/>
+<path d="M140 134 L140 168" stroke="var(--ink)" stroke-width="1.5" stroke-dasharray="3 4" fill="none"/>
+<g transform="translate(140 102) scale(0.8)">
+<polygon class="pt e" points="0,-80 69.3,-40 0,0 -69.3,-40"/>
+<polygon class="pl e" points="-69.3,40 0,80 0,0 -69.3,-40"/>
+<polygon class="pr e" points="69.3,40 0,80 0,0 69.3,-40"/>
+<path transform="matrix(0.866 0.5 0 1 -69.3 40)" d="M 34 -54 L 56 -40 L 34 -26" fill="none" stroke="#0B0F14" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path transform="matrix(-0.866 0.5 0 1 69.3 40)" d="M 46 -24 L 70 -24" fill="none" stroke="#0B0F14" stroke-width="7" stroke-linecap="round"/>
+</g>
+</svg>
+</div>
+</body>
+</html>

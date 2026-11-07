@@ -1,0 +1,28 @@
+<!-- @dsCard group="Vorlagen" height=400 width=640 subtitle="Aufgabenfolie 16:9" -->
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500;700;800&display=swap">
+<style>
+html,body{margin:0;background:var(--paper)}
+body{padding:20px}
+.card{position:relative;width:640px;height:360px;background:var(--surface);border-radius:var(--radius-lg);overflow:hidden;box-shadow:0 0 0 1px var(--line);font-family:var(--font-sans)}
+.chip{position:absolute;left:40px;top:34px;font:800 13px var(--font-mono);letter-spacing:.08em;padding:7px 14px;border-radius:var(--radius-pill);background:var(--amber);color:#0B0F14}
+h1{position:absolute;left:40px;top:84px;margin:0;font:800 34px/1.1 var(--font-mono);letter-spacing:-.05em;color:var(--ink)}
+ul{position:absolute;left:40px;top:142px;width:290px;margin:0;padding-left:20px;font-size:17px;line-height:1.65;color:var(--ink)}
+.win{position:absolute;left:370px;right:28px;top:34px;bottom:56px;border-radius:var(--radius-md);background:var(--code-bg);padding:16px 18px;font:400 13px/1.75 var(--font-mono);color:var(--code-text)}
+.win .c{color:var(--amber)}.win .g{color:#A3ADBA}.win .p{color:var(--amber)}
+.foot{position:absolute;left:40px;right:34px;bottom:22px;display:flex;justify-content:space-between;font:500 12px var(--font-mono);color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="card">
+<div class="chip">AUFGABE 03</div>
+<h1>VLANs planen</h1>
+<ul><li>Drei Subnetze nach Abteilung anlegen</li><li>Ports dem passenden VLAN zuordnen</li><li>Erreichbarkeit mit ping prüfen</li></ul>
+<div class="win"><span class="c"># VLAN 30 · Vertrieb</span><br><span class="p">$</span> vlan add 30<br><span class="p">$</span> ping -c 3 10.0.30.1<br><span class="g">64 bytes · time=0.41 ms</span></div>
+<div class="foot"><span>bitflip_</span><span>03 / 12 · 20 min</span></div>
+</div>
+</body>
+</html>
