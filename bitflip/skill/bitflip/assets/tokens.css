@@ -1,4 +1,5 @@
 /* Bitflip — Design-Tokens. Hell ist Standard, Dunkel per data-theme="dark". */
+@import url("fonts/fonts.css");
 :root,
 [data-theme="light"] {
   --paper: #FFFFFF;
@@ -43,7 +44,7 @@
   --iso-angle: 30deg;
   --iso-stroke: 1.5px;
 }
-/* Schriften: <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet"> */
+/* Schriften liegen lokal in fonts/ (fonts.css, per @import oben). Kein Google Fonts, keine Anfrage an fremde Server. */
 .bf-title { font: 800 40px/44px var(--font-mono); letter-spacing: -0.05em; color: var(--ink); }
 .bf-title::after { content: "_"; color: var(--amber); }
 .bf-label { font: 500 12px/16px var(--font-mono); letter-spacing: 0.16em; text-transform: uppercase; color: var(--amber-text); }

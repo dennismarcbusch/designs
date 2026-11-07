@@ -40,7 +40,7 @@ Kontrast: Tinte auf Weiß 19,1:1, Tinte auf Amber 10,4:1, Text-Amber auf Weiß 4
 
 ### Schrift
 
-JetBrains Mono (Titel, Labels, Code) und Inter (Fließtext). Beide frei von Google Fonts. Titel mit −0,05 em Laufweite, Kicker mit +0,16 em in Versalien. Stile: `display` 56/56, `title` 40/44, `subtitle` 24/29, `body` 17/27, `label` 12 Versalien, `code` 14/22.
+JetBrains Mono (Titel, Labels, Code) und Inter (Fließtext). Beide liegen lokal als woff2 in `assets/fonts/` (SIL Open Font License), nie von Google Fonts oder einem CDN laden. Titel mit −0,05 em Laufweite, Kicker mit +0,16 em in Versalien. Stile: `display` 56/56, `title` 40/44, `subtitle` 24/29, `body` 17/27, `label` 12 Versalien, `code` 14/22.
 
 ### Raster und Form
 

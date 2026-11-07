@@ -23,6 +23,8 @@ Bitflip ist das Design für Lernmaterial im IT-Unterricht: weiß, ruhig, nerdig.
 - `assets/tokens.css`: Farben, Schrift, Abstände und Radien als CSS-Variablen (hell, dunkel per `data-theme="dark"`). In HTML und Webseiten einbinden.
 - `assets/tokens.json`: dieselben Tokens als Daten.
 - `assets/logos/`: `bitflip-mark.svg`, `bitflip-mark-ink.svg`, `bitflip-logo.svg`, `bitflip-logo-dark.svg`.
+- `assets/fonts/`: JetBrains Mono (400, 500, 700, 800) und Inter (400, 500, 700) als woff2 mit `fonts.css` und den OFL-Lizenztexten.
+- `assets/psi-slides/`: getestete Startvorlage (`source.md`, `fonts/`, README) für Folien mit psi-slides.
 - `assets/scene.svg`: die Inselszene (Server-Insel, Lernpaket mit Code-Fenster, Würfeltreppe).
 - `assets/templates/video-title.html` und `task-slide.html`: lauffähige Vorlagen für Videotitel und Aufgabenfolie, 16:9.
 
@@ -30,12 +32,13 @@ Bitflip ist das Design für Lernmaterial im IT-Unterricht: weiß, ruhig, nerdig.
 
 1. `references/design.md` lesen, passende Vorlage aus `assets/templates/` als Ausgangspunkt nehmen oder neu aufbauen.
 2. `assets/tokens.css` einbinden, keine eigenen Farben erfinden.
-3. Schriften von Google Fonts laden (JetBrains Mono, Inter) oder lokal verwenden.
+3. Schriften nur lokal einbinden (`assets/fonts/`, kommt über `tokens.css`). **Nie Google Fonts oder ein anderes CDN verlinken** (Datenschutz: IP-Übertragung an Dritte).
 4. Vor dem Abgeben prüfen: eine Akzentfarbe, Amber nie als Text auf Weiß, Logo aus Datei, Titel mit Cursor.
 
 ## Bei Formaten
 
-- **PowerPoint/Folien:** 16:9, Rand 40 px entspricht etwa 1 cm. Titelfolie mit Szene rechts, Aufgabenfolie auf `#F4F6F8` mit dunklem Code-Fenster. Fußzeile: Wortmarke links, Zähler rechts.
+- **Folien mit psi-slides (Standard):** Vorlage in `assets/psi-slides/` (Inter, JetBrains Mono, Theme `light-orange`). psi-slides kennt keinen eigenen Akzentwert, der Amber-Ton ist dort dunkler als `#FFB020`. Nie eine Schrift von einem CDN laden.
+- **PowerPoint/Folien:** nur wenn ausdrücklich verlangt (Standard ist psi-slides). 16:9, Rand 40 px entspricht etwa 1 cm. Titelfolie mit Szene rechts, Aufgabenfolie auf `#F4F6F8` mit dunklem Code-Fenster. Fußzeile: Wortmarke links, Zähler rechts.
 - **Arbeitsblatt (A4):** Kopf mit Logo, Titel mit Amber-Balken, Namenszeile, nummerierte Aufgaben, Tabelle mit Tinte-Kopf, Merke-Kasten auf `#F4F6F8`. Muss auch in Schwarzweiß lesbar sein.
 - **Video/Thumbnail:** Titel höchstens zwei Wörter pro Zeile, Thumbnail höchstens zwei Wörter insgesamt.
 - **Name:** „Bitflip“ ist der Name des Designs, kein geprüfter Markenname.
